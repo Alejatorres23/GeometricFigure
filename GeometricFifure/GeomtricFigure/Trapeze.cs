@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GeomtricFigure;
-class Trapeze : Triangle
+
+public class Trapeze : Triangle
 {
     private double _d;
     public double D { get => _d; }
@@ -18,7 +19,7 @@ class Trapeze : Triangle
 
     private double ValidateD(double d) => d > 0 ? d : throw new ArgumentException("Base superior inválida");
 
-    public override double GetArea() => ((B + D) * H) / 2; // Se cambió _d por D para mayor claridad
+    public override double GetArea() => ((B + _d) * H) / 2;
 
-    public override double GetPerimeter() => A + B + C + D; // Se cambió _d por D para mayor claridad
+    public override double GetPerimeter() => A + B + C + _d;
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GeomtricFigure;
-class Triangle : Rectangle
+public class Triangle : Rectangle
 {
     private double _c, _h;
     public double C { get => _c; }

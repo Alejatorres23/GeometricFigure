@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GeomtricFigure;
 
-    class Parallelogram : Rectangle
+   public class Parallelogram : Rectangle
     {
         private double _h;
         public double H { get => _h; }
